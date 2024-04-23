@@ -8,10 +8,12 @@
 }
 header {
     display: flex;
-    flex-direction: row;
     background-image: linear-gradient(to top, $footer-igradient, $footer-fgradient);
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    //Ajustes para dejar fijo el header
+    width: 100%; 
+    position: fixed;
     z-index: 5;
 }
 .essencial {
@@ -24,14 +26,9 @@ header {
         color: $white-txt;
         text-decoration: none;
         font-size: 1.5rem;
+        padding: 1rem;
     }
     &____title:hover {
         color: $hover-txt-white;
     }
 }
-
-
-
-
-
-

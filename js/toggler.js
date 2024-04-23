@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    const openBtn = document.getElementById('open-menu');
-    const closeBtn = document.getElementById('close-menu');
+    const openBtn = document.getElementById('open');
+    const closeBtn = document.getElementById('close');
   
     const navegation = document.getElementById('navegation');
   
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
     closeBtn.addEventListener('click', function(){
-      navegation.classList.remove('visible');
-    });
+      navegation.classList.remove('visible')
+    })
   
   });

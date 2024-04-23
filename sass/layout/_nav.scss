@@ -24,21 +24,24 @@
         color: $hover-txt-white;
     }
 }
-.open-menu, .close-menu {
+.open, 
+.close {
   display: none;
   border: none;
+  padding: 0 1rem;
   background: none;
+  visibility: none;
   cursor: pointer;
 }
 
 //responsive
 @media screen and (max-width: 888px) {
-    .open-menu, .close-menu {
-      display: block;
-      //font-size: 1.6rem;
-      color: white;
-  }
-  
+  //burguer menu
+  .open, .close {
+    display: block;
+    font-size: 1.6rem;
+    color: white;
+}
   .essencial {
     padding: 1rem;
     &__logo {
