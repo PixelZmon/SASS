@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-.main-content-register {
+.main-content-login {
     flex: 1;
     padding-top: 6rem;
     background-image: url(https://media.indiedb.com/images/games/1/65/64465/co-op_fight.gif);
@@ -20,14 +20,14 @@ body {
         text-align: center;
     }
 }
-.contact {
+.login {
     text-align: center;
     &__title {
         color: $white-txt;
         font-size: 5rem;
     }
 }
-.contact-form {
+.login-form {
     padding-bottom: 2rem;
     &__group {
         &--label {
@@ -44,19 +44,20 @@ body {
     }
 }
 
-//responsive tablet
-@media (max-width: 992px) {
-    .contact-form {
-        &__group {
-            &--input, &--textarea {
-                width: 40%;
-            }
-        }
-    }
-}
 //responsive moviles
 @media (max-width: 778px) {
-    .contact-form {
+    .main-content-login {
+        &__titleform {
+            font-size: 6rem;
+            padding-top: 1rem;
+        }
+    }
+    .login {
+        &__title {
+            font-size: 4rem;
+        }
+    }
+    .login-form {
         &__group {
             &--input, &--textarea {
                 width: 50%;
@@ -65,17 +66,18 @@ body {
     }
 }
 @media (max-width: 576px) {
-    .main-content {
+    .main-content-login {
         &__titleform {
-            font-size: 6rem;
+            font-size: 4rem;
+            padding-top: 1rem;
         }
     }
-    .contact {
+    .login {
         &__title {
-            font-size: 5rem;
+            font-size: 3rem;
         }
     }
-    .contact-form {
+    .login-form {
         &__group {
             &--input, &--textarea {
                 width: 60%;
@@ -84,17 +86,17 @@ body {
     }
 }
 @media (max-width: 369px) {
-    .main-content {
+    .main-content-login {
         &__titleform {
             font-size: 4rem;
         }
     }
-    .contact {
+    .login {
         &__title {
             font-size: 3rem;
         }
     }
-    .contact-form {
+    .login-form {
         &__group {
             &--input, &--textarea {
                 width: 70%;
